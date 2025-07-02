@@ -1,0 +1,9 @@
+:root {
+  --cor-principal: #0179b7;        /* Azul escuro (base) */
+  --cor-secundaria: #73cbf3;       /* Azul claro (detalhes, hover) */
+  --cor-destaque: #f7dd34;         /* Amarelo (chamada, ícones) */
+  --cor-texto-claro: #ffffff;      /* Branco para textos */
+  --cor-fundo-escuro: #0f2e41;  
+  --cor-fundo-escuro-secundaria: #264f66;   /* Azul petróleo (rodapé inferior) */
+  --cor-cinza-suave: #e0e0e0;      /* Fundo claro alternativo */
+}

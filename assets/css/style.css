@@ -1,0 +1,230 @@
+@import url('./variable.css');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove estilos padrão de listas e links */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Define uma base para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+/* Inputs e botões */
+input, button, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+.hero-section {
+  background:linear-gradient(to bottom, var(--cor-destaque) 0%, #caa306 100%);
+  color: var(--cor-texto-claro);
+  padding: 200px 0;
+  position: relative;
+}
+.img-hero img{
+    height: 300px;
+}
+.container h1{
+    color:var(--cor-fundo-escuro);
+    font-weight: bold;
+}
+.container p{
+    color:var(--cor-fundo-escuro-secundaria);
+    font-weight: bold;
+}
+.container .btn-contato{
+    font-weight: bold;
+}
+.container .btn-contato:hover{
+    background-color: var(--cor-principal) !important;
+    color: var(--cor-texto-claro);
+    transition: all 0.2s ease-in-out;
+}
+.container .logo{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container .logo img{
+        width: 60px;
+    height: 60px;
+}
+.overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 100px 0;
+    }
+.copyright{
+    background-color: var(--cor-fundo-escuro);
+}
+.footer{
+    background-color: var(--cor-fundo-escuro-secundaria);
+}
+.menu a{
+    font-size: 18px;
+    color:var(--cor-fundo-escuro);
+        transition: all 0.2s ease-in-out;
+}
+.menu ul a:hover{
+    margin-top: -2px;
+
+}
+.section-segmento{
+    background-color: var(--cor-cinza-suave);
+}
+.cards span{
+    color: var(--cor-fundo-escuro);
+}
+.card-butao{
+    transition: all 0.5s ease-in-out;
+}
+.card-butao:hover{
+background-color: var(--cor-destaque);
+color: white;
+
+}
+.mapa-mundi{
+    transition: all 0.2s ease !important;
+}
+.mapa-mundi:hover{
+ transform: rotate(360deg)!important;
+
+}
+.menu .btn-login{
+    color: var(--cor-texto-claro);
+}
+.btn:hover{
+    background-color: var(--cor-principal) !important;
+    transition: all 0.2s ease-in-out;
+}
+.funcionalidades strong{
+    color: var(--cor-fundo-escuro-secundaria);
+}
+.btn-func button{
+    background-color: var(--cor-cinza-suave);
+    color: var(--cor-fundo-escuro-secundaria);
+}
+.btn-func button:hover{
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-cinza-suave);
+}
+.nav-pills .nav-link.active{
+        background-color: var(--cor-fundo-escuro);
+    color: var(--cor-cinza-suave);
+}
+.point {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  
+}
+
+.point li {
+  color: var(--cor-fundo-escuro); 
+  margin-bottom: 0.5rem;
+}
+
+.point li::marker {
+  color: var(--cor-destaque); 
+}
+
+ .form-control {
+    height: 3.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    font-size: 1rem;
+  }
+
+  .form-control:focus {
+    border-color: var(--cor-fundo-escuro-secundaria);
+    box-shadow: 0 0 5px var(--cor-fundo-escuro-secundaria);
+    outline: none;
+  }
+/* Reset visual do botão */
+.nav-link.btn-func {
+  border: none;
+  background-color: transparent !important; /* Remove qualquer bg */
+  color: #000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 1.5rem;
+  font-weight: 500;
+  border-radius: 0;
+  transition: color 0.2s ease;
+}
+
+/* Remove qualquer foco ou bg do estado ativo */
+.nav-link.btn-func.active,
+.nav-link.btn-func:focus,
+.nav-link.btn-func:active,
+.nav-link.btn-func.show {
+  background-color: transparent !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+.aplicativo h2 strong{
+    color: var(--cor-fundo-escuro);
+}
+
+.footer-logo a img  {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    cursor: pointer;
+}
+
+.footer-sobre li i{
+padding: 0px 13px;
+    display: inline;
+
+}
+footer a:hover{
+    color: var(--cor-destaque);
+}
+li {
+    display: flex;
+    align-items: center;
+  }
+.footer-segmento h5{
+    color: var(--cor-destaque);
+}
+.footer-contato h5{
+    color: var(--cor-destaque);
+}
+.footer-contato li i{
+padding: 10px 0px;
+    display: inline;
+}
+.footer-contato li a{
+    padding-left: 10px;
+}
+.footer-contato .btn-contato-sobre:hover{
+    background-color: var(--cor-destaque) !important;
+    color:var(--cor-fundo-escuro);
+}
