@@ -1,0 +1,25 @@
+<tr class="p-4">
+    <td class="col-1">{{codigo}}</td>
+    <td class="col-1">{{pedido}}</td>
+    <td class="col-5">{{cliente}}</td>
+    <td class="col-3">{{dtpedido}}</td>
+    <td class="col-4"><span class="badge {{color}}">{{valor}}</span></td>
+    <td class="col-1">
+        <form id="baixaParcial{{codigo}}" method="post" action="{{URL}}/admin/baixaPromissoria">
+            <input hidden="hidden" name="codigo" value="{{codigo}}">
+            <input name="valor" class="form-control form-control-sm col-8" type="text" placeholder="0,00">
+        </form>
+    </td>
+    <td class="col-1">
+         <button form="baixaParcial{{codigo}}" type="submit" class="badge bg-warning">
+             <i class="fa fa-arrow-down text-white" aria-hidden="true"></i>
+         </button>
+    </td>
+    <td class="col-1">
+        <span class="badge bg-success">
+        <a href="{{URL}}/admin/baixaPromissoria/{{codigo}}">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </a>
+    </span>
+    </td>
+</tr>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>The Way Sistemas</title> <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{URL}}/plugins/fontawesome-free/css/all.min.css" rel="stylesheet"> <!-- DataTables -->c
+    <link href="{{URL}}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{URL}}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{URL}}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css" rel="stylesheet"><!-- Theme style -->
+    <link href="{{URL}}/dist/css/adminlte.min.css" rel="stylesheet">
+    <link rel="icon" href="../../../dist/img/favicon.png">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed ">
+    <div class="wrapper"> <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light"> <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" data-widget="pushmenu" href="#" role="button">
+                    <i class="fas fa-bars"></i></a></li>
+                <li class="nav-item d-none d-sm-inline-block"><a class="nav-link" href="index.php">Inicio</a></li>
+            </ul> <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto"> <!-- Navbar Search -->
+                <li class="nav-item"><a class="nav-link" data-widget="fullscreen" href="#" role="button"> <i
+                            class="fas fa-expand-arrows-alt"></i> </a></li>
+                <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/logout" role="button"> Sair<i
+                            class="fa fa-sign-out"></i> </a></li>
+            </ul>
+        </nav> <!-- /.navbar --> <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4"> <!-- Brand Logo --> <a class="brand-link"
+                href="{{URL}}/index3.html"> <img alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    src="{{URL}}/dist/img/AdminLTELogo.png" style="opacity: .8"> <span
+                    class="brand-text font-weight-light"><b>The Way Sistemas</b></span> </a> <!-- Sidebar -->
+            <div class="sidebar"> <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    
+                </div> <!-- Sidebar Menu - Menu Lateral-->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview"
+                        role="menu">
+                        <!-- Add icons to the links using the .nav-icon class       with font-awesome or any other icon font library -->
+                        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin"> <i
+                                    class="nav-icon fas fa-tachometer-alt"></i>
+                                <p> Dashboard </p>
+                            </a>
+                        </li>
+                        <li class="nav-header">Cadastros</li>
+                        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/empresa"> <i
+                                    class="nav-icon fa fa-university"></i>
+                                <p> Empresa </p>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="{{URL}}/admin/clientes"> <i
+                                    class="nav-icon fa fa-user-circle"></i>
+                                <p> Clientes </p>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </nav> <!-- /.sidebar-menu -->
+            </div> <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper"> <!-- Content Header (Mapa Pagina) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Clientes</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section> <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-secondary"><a href="{{URL}}/admin/cliente">
+                            <div class="card-header bg-gray">
+                                <h2 class="card-title"><i class="fas fa-users"></i> <i class="p-1">Novo
+                                        Cliente+</i></h2>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <div class="card-body table-responsive p-0">
+                                <table class="table table-bordered table-striped" id="example1">
+                                    <thead>
+                                        <tr>
+                                            <th>Código</th>
+                                            <th>Nome</th>
+                                            <th>Fantasia</th>
+                                            <th>CNPJ</th>
+                                            <th>Telefone</th>
+                                            <th>Ativo</th>
+                                            <th>Liberado</th>
+                                            <th>Editar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> {{tr}}</tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- /.content -->
+        </div> <!-- /.content-wrapper -->
+        <footer class="main-footer"><strong>Copyright &copy; 2025 <a href="">The Way Sistemas</a>.</strong> Todos
+            direitos
+            reservados
+            <div class="float-right d-none d-sm-inline-block"><b>Version</b> 1.0.0</div>
+        </footer> <!-- /.control-sidebar -->
+    </div><!-- ./wrapper --><!-- jQuery -->
+    <script src="{{URL}}/plugins/jquery/jquery.min.js"></script><!-- Bootstrap 4 -->
+    <script src="{{URL}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- DataTables  & Plugins -->
+    <script src="{{URL}}/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="{{URL}}/plugins/jszip/jszip.min.js"></script>
+    <script src="{{URL}}/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="{{URL}}/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="{{URL}}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="{{URL}}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script><!-- AdminLTE App -->
+    <script src="{{URL}}/dist/js/adminlte.min.js"></script><!-- AdminLTE for demo purposes -->
+    <script>    $(function () {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });</script>
+</body>
+
+</html>

@@ -1,27 +1,14 @@
 <?php
-include 'includes/cookies.php';
-include 'includes/header.php';
 
-$page = $_GET['page'] ?? 'home';
+require __DIR__.'/includes/app.php';
 
-switch ($page) {
-    case 'sobre':
-        include 'pages/sobre.php';
-        break;
-    case 'ouvidoria':
-        include 'pages/ouvidoria.php';
-        break;
-    case 'segmentos':
-        include 'pages/segmentos.php';
-        break;
-            case 'aplicativos':
-        include 'pages/aplicativos.php';
-        break;
+use App\Http\Router;
 
-    default:
-        include 'pages/home.php';
-        break;
-}
 
-include 'includes/footer.php';
-?>
+$obRouter = new Router(URL);
+
+include __DIR__.'/routes/pages.php';
+include __DIR__.'/routes/admin.php';
+
+
+$obRouter->run()->sendResponse();

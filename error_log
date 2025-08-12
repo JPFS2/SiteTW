@@ -1,0 +1,115 @@
+[07-Jan-2025 22:48:34 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743
+[07-Jan-2025 22:49:35 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743
+[16-Jan-2025 19:12:44 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743
+[16-Jan-2025 19:31:38 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743
+[05-Feb-2025 15:26:56 America/Fortaleza] PHP Warning:  Attempt to read property "codprod" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/Mesa.php on line 699
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "numped" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 166
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "codcli" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 167
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "vltotal" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 168
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "vldesconto" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 169
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "acrescimo" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 170
+[06-Feb-2025 13:43:18 America/Fortaleza] PHP Warning:  Attempt to read property "dtpedido" on bool in /home3/junin521/public_html/controle/app/Controller/Admin/ControlePedido.php on line 171
+[07-Feb-2025 12:47:19 America/Fortaleza] PHP Warning:  Undefined array key "codmesa" in /home3/junin521/public_html/controle/app/Controller/Admin/Pagamento.php on line 129
+[07-Feb-2025 12:47:19 America/Fortaleza] PHP Warning:  Undefined array key "valor" in /home3/junin521/public_html/controle/app/Controller/Admin/Pagamento.php on line 131
+[07-Feb-2025 12:47:19 America/Fortaleza] PHP Warning:  Undefined array key "ForaPag" in /home3/junin521/public_html/controle/app/Controller/Admin/Pagamento.php on line 133
+[07-Feb-2025 12:47:19 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: float - string in /home3/junin521/public_html/controle/app/Controller/Admin/Pagamento.php:143
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(343): App\Controller\Admin\Pagamento::addPMesa(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Pagamento.php on line 143
+[08-Feb-2025 12:34:18 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743
+[12-Feb-2025 09:15:11 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php:743
+Stack trace:
+#0 /home3/junin521/public_html/controle/routes/admin.php(107): App\Controller\Admin\Manutencao::addManutencao(Object(App\Http\Request))
+#1 [internal function]: {closure}(Object(App\Http\Request))
+#2 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(54): call_user_func_array(Object(Closure), Array)
+#3 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#4 /home3/junin521/public_html/controle/app/Http/Middleware/RequireAdminLogin.php(18): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#5 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\RequireAdminLogin->handle(Object(App\Http\Request), Object(Closure))
+#6 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(66): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#7 /home3/junin521/public_html/controle/app/Http/Middleware/Mainteance.php(23): App\Http\Middleware\Queue->App\Http\Middleware\{closure}(Object(App\Http\Request))
+#8 /home3/junin521/public_html/controle/app/Http/Middleware/Queue.php(69): App\Http\Middleware\Mainteance->handle(Object(App\Http\Request), Object(Closure))
+#9 /home3/junin521/public_html/controle/app/Http/Router.php(141): App\Http\Middleware\Queue->next(Object(App\Http\Request))
+#10 /home3/junin521/public_html/controle/index.php(14): App\Http\Router->run()
+#11 {main}
+  thrown in /home3/junin521/public_html/controle/app/Controller/Admin/Manutencao.php on line 743

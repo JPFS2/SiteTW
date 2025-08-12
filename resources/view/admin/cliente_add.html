@@ -1,0 +1,187 @@
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview" role="menu">
+        <!-- Add icons to the links using the .nav-icon class       with font-awesome or any other icon font library -->
+       <li class="nav-item"><a class="nav-link" href="{{URL}}/admin"> <i
+                    class="nav-icon fas fa-tachometer-alt"></i>
+                <p> Dashboard </p>
+            </a>
+        </li>
+       
+        <li class="nav-header">Cadastros</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/empresa"> <i class="nav-icon fa fa-university"></i>
+                <p> Empresa </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="{{URL}}/admin/clientes"> <i
+                    class="nav-icon fa fa-user-circle"></i>
+                <p> Clientes </p>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+<!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1></h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Clientes</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+
+                <div class="col-md">
+                    <div class="card card-secondary">
+
+                        <div class="card-header">
+                            <h3 class="card-title">Dados Basicos</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <form method="post" action="{{URL}}/admin/cliente">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Nome</label>
+                                            <input type="text" id="inputEstimatedBudget" name="cliente" class="form-control" placeholder="Razão Social">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Fantasia </label>
+                                            <input type="text" id="inputEstimatedBudget" name="fantasia" class="form-control" placeholder="Fantasia">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">CPF</label>
+                                            <input type="text" id="inputEstimatedBudget" name="cnpj" class="form-control" placeholder="00.000.000/0000-00">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Telefone</label>
+                                            <input type="text" id="inputEstimatedBudget" name="tel1" class="form-control" placeholder="(88)988888888">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Celular</label>
+                                            <input type="text" id="inputEstimatedBudget" name="tel2" class="form-control" placeholder="(88)988888888">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Email</label>
+                                            <input type="email" id="inputEstimatedBudget" name="email" class="form-control" placeholder="email@email.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Ativo</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="Ativo"  placeholder="N">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Liberado</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="Liberado"  placeholder="N">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">CEP</label>
+                                            <input type="text" id="inputEstimatedBudget" name="cep" class="form-control" ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Endereço</label>
+                                            <input type="text" id="inputEstimatedBudget" name="endereco" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Numero</label>
+                                            <input type="text" id="inputEstimatedBudget" name="numero" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Bairro</label>
+                                            <input type="text" id="inputEstimatedBudget"  name="bairro" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Cidade</label>
+                                            <input type="text" id="inputEstimatedBudget"  name="cidade" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">UF</label>
+                                            <input type="text" id="inputEstimatedBudget" name="uf" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                            <label for="inputEstimatedBudget">Complemento</label>
+                                            <input type="text" id="inputEstimatedBudget" name="complemento" class="form-control">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <a href="{{URL}}/admin/clientes"><input type="button" value="Cancelar" class="btn bg-gradient-danger float-right m-1"></a>
+                                            <input type="submit" value="Salvar" class="btn btn-success float-right m-1">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>

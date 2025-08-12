@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juninho do Iphone</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../..//plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../..//plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../..//plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../..//plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../..//dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../..//plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../..//plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../..//plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="icon" href="../../dist/img/fivecon5.png">
+</head>
+
+<body>
+
+<div class="container">
+  <div id="forPrint" name = "forPrint">
+
+    <div class="text-center">
+      <b>
+        <h1>TERMO DE GARANTIA EM ASSISTÊNCIA</h1>
+      </b>
+      <h3> JUNINHO DO IPHONE CNPJ: 32512544/0001-29<br><br>
+        NÃO ESTÃO INCLUSOS NESTA GARANTIA QUAISQUER OUTRAS PEÇAS E PARTES EXTERNAS NÃO ENVOLVIDAS NO SERVIÇO PRESTADO.
+      </h3>
+      <h4> <br><br><u> A GARANTIA É CANCELADA AUTOMATICAMENTE NOS SEGUINTES CASOS:</u><br>
+        Em ocasião de quedas, esmagamentos, sobrecarga elétrica, exposição do aparelho a
+        <br>altas temperaturas, umidade ou líquidos, exposição do aparelho a poeira, pó e/ou
+        <br>limalha de metais, ou ainda quando constatado mau uso do aparelho, instalações,
+        <br> modificações ou atualizações no seu sistema operacional. Abertura do equipamento
+        <br> ou tentativa de conserto deste por terceiros que não sejam os técnicos do
+        <br> JuninhoDoIphone, mesmo que para realização de outros serviços, bem como a
+        <br> violação do selo/lacre de garantia colocado pelo JuninhoDoIphone.<br><br>
+        <h4><u>VALE LEMBRAR QUE:</u> <br><br>
+          1) A GARANTIA DE 90 (NOVENTA) dias está de acordo com o <u>artigo 26 inciso
+            <br>II do código de defesa do consumidor.</u>
+          <br><br>2) A não apresentação de deste documento que comprove o serviço
+          <br>INVÁLIDA a garantia.
+          <br><br>3) Qualquer mal funcionamento APÓS ATUALIZAÇÕES do sistema
+          <br>operacional ou aplicativos NÃO FAZEM PARTE DESSA GARANTIA.
+          <br><br>4) O aparelho vindo a apresentar qualquer defeito relacionado ao(s)
+          <br>serviço(s) prestado(s), haverá um prazo de até 7 dias corridos para a
+          <br>realização de correção ou ajustes.
+          <br><br>5) A GARANTIA é válida somente para o(s) serviço(s) descrito(s) no termo
+          <br>de garantia ou ordem de serviço. NÃO ABRANGENDO OUTRAS PARTES e
+          <br>respeitando as condições aqui descritas.<br><br>
+        </h4>
+  
+        <h4><b>DATA:</b> {{data}} <b>MODELO:</b> {{descricao}} <br>
+          <b>IMEI:</b> {{peso}}
+          <br><b>SERVIÇO PRESTADO:</b><br>
+          {{variavel}}
+          <br><b>DADOS DO CLIENTE</b><br>
+          <b>NOME:</b>{{clientec}} <b>CPF:</b> {{cpf}}
+          <br> <b> ENDEREÇO:</b> {{endereco}} {{bairro}}
+          <b>Nº</b> {{numero}}
+          <br> <b> CIDADE: </b> {{cidade}} <b>TELEFONE:</b> {{telefone}}
+        </h4><br>
+        <h5>Confirmo que li este termo de garantia, fui orientado sobre o seu conteúdo e que testei o aparelho,<br> e este
+          se encontra em perfeito estado estético e
+          de funcionamento no ato da retirada.<br><br> </h5>
+    </div>
+    <b>ASSINATURA DO CLIENTE:<br>
+      <br> ASSINATURA DO JUNINHO DO IPHONE:</b>
+    </h3>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+  <!--
+<div class="wrapper">
+  <section class="invoice">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="page-header">
+          <i class="fas fa-table"></i> {{empresa}}
+          <small class="float-right">{{data}}</small>
+        </h2>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-12 table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Codigo</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Subtotal</th>
+          </tr>
+          </thead>
+          <tbody>
+            {{tr}}
+          </tbody>
+        </table>
+        <div class="row">
+
+          <div class="col-8">
+
+          </div>
+
+          <div class="col-4 px-3">
+            <br>
+            {{moedas}}
+            <div class="text-right"><h5><b>Total: {{vltotal}} </b></h5></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+</div>-->
+
+  <!-- ./wrapper -->
+  <!-- Page specific script -->
+  <script>
+    window.addEventListener("load", window.print());
+  </script>
+</body>
+
+</html>
