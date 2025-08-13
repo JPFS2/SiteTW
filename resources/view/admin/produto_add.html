@@ -1,0 +1,263 @@
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview" role="menu">
+        <!-- Add icons to the links using the .nav-icon class       with font-awesome or any other icon font library -->
+       <li class="nav-item"><a class="nav-link" href="{{URL}}/admin"> <i
+                    class="nav-icon fas fa-tachometer-alt"></i>
+                <p> Dashboard </p>
+            </a>
+        </li>
+        <li class="nav-header">Operações</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/venda"> <i class="nav-icon fa fa-edit"></i>
+                <p> Pedido </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/manutencao"> <i class="nav-icon fa fa-wrench"></i>
+                <p> Serviços Manutenções </p>
+            </a>
+        </li>
+         
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/garantia"> <i class="nav-icon fa fa-book"></i>
+            <p> Garantia </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/percas"> <i class="nav-icon fa fa-trash"></i>
+            <p> Perda Avulsa</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/despesas"> <i class="nav-icon fa fa-tag"></i>
+            <p> Custos</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/conferenciacaixa"> <i
+                    class="nav-icon fas fa-cart-plus"></i>
+                <p> Caixa </p>
+            </a>
+        </li>
+        <li class="nav-header">Cadastros</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/empresa"> <i class="nav-icon fa fa-university"></i>
+                <p> Empresa </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/clientes"> <i
+                    class="nav-icon fa fa-user-circle"></i>
+                <p> Clientes </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="{{URL}}/admin/produtos"> <i class="nav-icon fa fa-archive"></i>
+                <p> Produto </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/importaproduto"> <i
+                    class="nav-icon fas fa-upload"></i>
+                <p> Importar Produtos </p>
+            </a>
+        </li>
+        <li class="nav-header">Relatórios</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaoprodutos"> <i
+                    class="nav-icon fa fa-th"></i>
+                <p> Estoque </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/pedidos"> <i
+                    class="nav-icon fa fa-shopping-cart"></i>
+                <p> Relação de pedidos </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/manutencoes"> <i
+                class="nav-icon fa fa fa-wrench"></i>
+            <p> Relação de Manutenções </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaocaixas"> <i
+                class="nav-icon fa fa-inbox"></i>
+            <p> Relação de caixas </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaosangria"> <i
+            class="nav-icon fa fa-cloud-download-alt"></i>
+        <p> Relação de sangrias </p>
+    </a>
+    </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/produtosVendidos"> <i
+                    class="nav-icon fa fa-shopping-basket"></i>
+                <p> Produtos Vendidos </p>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/pedidoestornado"> <i class="nav-icon fa fa-table"></i>
+                <p> Pedidos Estornados </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/promissorias"> <i class="nav-icon fa fa-users"></i>
+                <p> Relação de devedores </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/lucratividadePedido"> <i class="nav-icon fa fa-signal"></i>
+            <p>Lucro por pedido</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaodespesas"> <i class="nav-icon fa fa-tag"></i>
+            <p>Relação de Despesas</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaopercas"> <i class="nav-icon fa fa-trash"></i>
+            <p> Relação de percas</p>
+        </a>
+        </li>
+    </ul>
+</nav>
+<!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Cadastro de Produto</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Empresa</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="col-md">
+                <div class="card card-secondary">
+
+                    <div class="card-header">
+                        <h3 class="card-title">Dados Basicos</h3>
+                        
+                    </div>
+                    <form method="post" action="{{URL}}/admin/produto">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Descricao</label>
+                                        <input type="text" id="inputEstimatedBudget" name="descricao" class="form-control" placeholder="Nome do Produto">
+                                    </div>
+                                </div>
+<div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Armazenamento</label>
+                                        <input type="text" id="inputEstimatedBudget" name="ean13" class="form-control" placeholder="0 GB" >
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Categoria</label>
+                                        <select class="form-control select2bs4 select2-hidden-accessible"
+                                        id="minhaLista" onchange="alimentarCampo();" name="codsecao" style="width: 100%;"
+                                        data-select2-id="21" tabindex="-1" aria-hidden="true">
+                                            {{secao}}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Cor</label>
+                                        <input type="text" id="inputEstimatedBudget" name="und" class="form-control" placeholder="" >
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Fornecedor</label>
+                                        <input type="text" id="inputEstimatedBudget" name="fornec" class="form-control" placeholder="" >
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">IMEI</label>
+                                        <input type="text" id="inputEstimatedBudget" name="peso" class="form-control" placeholder="" >
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Quantidade</label>
+                                        <input type="number" id="quantidade" name="qtestoque" class="form-control" value="1" readonly >
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Novo</label>
+                                        <select class="form-control select2bs4 select2-hidden-accessible" name="modelo" style="width: 100%;"
+                                                data-select2-id="21" tabindex="-1" aria-hidden="true">
+                                            <option>S</option>
+                                            <option>N</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Preço Compra</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" name="pcompra" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="inputEstimatedBudget">Preço Venda</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" name="punit" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <a href="{{URL}}/admin/produtos"><input type="button" value="Cancelar" class="btn bg-gradient-danger float-right m-1"></a>
+                                    <input type="submit" value="Salvar" class="btn btn-success float-right m-1">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+<script type="text/javascript">
+    function alimentarCampo() {
+
+        var minhaLista = document.getElementById("minhaLista");
+        var celular = minhaLista.options[minhaLista.selectedIndex].value;
+
+        if(celular == 1){
+            document.getElementById("quantidade").value = 1;
+            document.getElementById("quantidade").readOnly = true;
+        }else{
+            document.getElementById("quantidade").readOnly = false;
+        }
+    }
+</script>

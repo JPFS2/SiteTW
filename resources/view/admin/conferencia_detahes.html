@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juninho do Iphone</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{URL}}/plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{URL}}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="{{URL}}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="{{URL}}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{URL}}/dist/css/adminlte.min.css">
+  <link href="{{URL}}/dist/img/fivecon5.png" rel="icon">
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed ">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.php" class="nav-link">Inicio</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contato</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{URL}}/admin/logout" role="button">
+          Sair<i class="fa fa-sign-out"></i>
+        </a>
+      </li>
+
+
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="{{URL}}/admin" class="brand-link">
+      <img src="{{URL}}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light"><b>Juninho do Iphone</b></span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{{URL}}/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">{{usuario}}</a>
+        </div>
+      </div>
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview" role="menu">
+        <!-- Add icons to the links using the .nav-icon class       with font-awesome or any other icon font library -->
+       <li class="nav-item"><a class="nav-link" href="{{URL}}/admin"> <i
+                    class="nav-icon fas fa-tachometer-alt"></i>
+                <p> Dashboard </p>
+            </a>
+        </li>
+        <li class="nav-header">Operações</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/venda"> <i class="nav-icon fa fa-edit"></i>
+                <p> Pedido </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/manutencao"> <i class="nav-icon fa fa-wrench"></i>
+                <p> Serviços Manutenções </p>
+            </a>
+        </li>
+         
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/garantia"> <i class="nav-icon fa fa-book"></i>
+            <p> Garantia </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/percas"> <i class="nav-icon fa fa-trash"></i>
+            <p> Perda Avulsa</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/despesas"> <i class="nav-icon fa fa-tag"></i>
+            <p> Custos</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="{{URL}}/admin/conferenciacaixa"> <i
+                    class="nav-icon fas fa-cart-plus"></i>
+                <p> Caixa </p>
+            </a>
+        </li>
+        <li class="nav-header">Cadastros</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/empresa"> <i class="nav-icon fa fa-university"></i>
+                <p> Empresa </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/clientes"> <i
+                    class="nav-icon fa fa-user-circle"></i>
+                <p> Clientes </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/produtos"> <i class="nav-icon fa fa-archive"></i>
+                <p> Produto </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/importaproduto"> <i
+                    class="nav-icon fas fa-upload"></i>
+                <p> Importar Produtos </p>
+            </a>
+        </li>
+        <li class="nav-header">Relatórios</li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaoprodutos"> <i
+                    class="nav-icon fa fa-th"></i>
+                <p> Estoque </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/pedidos"> <i
+                    class="nav-icon fa fa-shopping-cart"></i>
+                <p> Relação de pedidos </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/manutencoes"> <i
+                class="nav-icon fa fa fa-wrench"></i>
+            <p> Relação de Manutenções </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaocaixas"> <i
+                class="nav-icon fa fa-inbox"></i>
+            <p> Relação de caixas </p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaosangria"> <i
+            class="nav-icon fa fa-cloud-download-alt"></i>
+        <p> Relação de sangrias </p>
+    </a>
+    </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/produtosVendidos"> <i
+                    class="nav-icon fa fa-shopping-basket"></i>
+                <p> Produtos Vendidos </p>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/pedidoestornado"> <i class="nav-icon fa fa-table"></i>
+                <p> Pedidos Estornados </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/promissorias"> <i class="nav-icon fa fa-users"></i>
+                <p> Relação de devedores </p>
+            </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/lucratividadePedido"> <i class="nav-icon fa fa-signal"></i>
+            <p>Lucro por pedido</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaodespesas"> <i class="nav-icon fa fa-tag"></i>
+            <p>Relação de Despesas</p>
+        </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{URL}}/admin/relacaopercas"> <i class="nav-icon fa fa-trash"></i>
+            <p> Relação de percas</p>
+        </a>
+        </li>
+    </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1></h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Controle Pedidos</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-lg-3 col-6">
+
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>{{vldinheiro}}</h3>
+                    <h5 class="p-1"><b>Dinheiro</b></h5>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-bag"></i>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <h3>{{vlcredito}}<sup style="font-size: 20px"></sup></h3>
+                    <h5 class="p-1"><b>Cartão Credito</b></h5>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <h3>{{vldebito}}</h3>
+                    <h5 class="p-1"><b>Cartão Debito</b></h5>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3>{{vlpix}}</h3>
+                    <h5 class="p-1"><b>Pix</b></h5>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-9">
+                <div class="card">
+
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>Pedido</th>
+                        <th>Cliente</th>
+                        <th>Moeda</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {{tr}}
+                      </tbody>
+                      <tfoot>
+                      <tr>
+                        <th>Pedido</th>
+                        <th>Mesa</th>
+                        <th>Moeda</th>
+                        <th>Data(s)</th>
+                        <th>Valor</th>
+
+                      </tr>
+                      </tfoot>
+                    </table>
+                    <br>
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="btn btn-default bg-success float-right" data-toggle="modal" data-target="#modal-default">
+                          Fechar Caixa
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+
+                </div>
+                <!-- /.card -->
+              </div>
+              <div class="col-3">
+                <div class="col-md-12 col-sm-2 col-12">
+                  <div class="info-box shadow-sm">
+                    <span class="info-box-icon bg-gray">
+                      <a class="" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                    <div class="info-box-content">
+                      <span class="info-box-text mt-1">
+                        <h5><b>Promissoria</b></h5>
+                      </span>
+                      <span class="info-box-number">
+                        <h5><b>{{vlpromissoria}}</b></h5>
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="info-box shadow-sm">
+                    <span class="info-box-icon bg-success">
+                      <a class="" data-toggle="modal" data-target="#modal-lg">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                    <div class="info-box-content">
+                      <span class="info-box-text mt-1">
+                        <h5><b>Abastecimento</b></h5>
+                      </span>
+                      <span class="info-box-number">
+                        <h5><b>{{vlabastecimento}}</b></h5>
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="info-box shadow-sm">
+                    <span class="info-box-icon bg-danger">
+                      <a class="" data-toggle="modal" data-target="#modal-xl">
+                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                    <div class="info-box-content">
+                      <span class="info-box-text mt-1">
+                        <h5><b>Sangria</b></h5>
+                      </span>
+                      <span class="info-box-number">
+                        <h5>
+                          <b>{{vlsangria}}</b>
+                        </h5>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="info-box shadow-sm">
+                    <span class="info-box-icon bg-cyan">
+                      <a class="">
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                    <div class="info-box-content">
+                      <span class="info-box-text mt-1">
+                        <h5><b>Recebimento</b></h5>
+                      </span>
+                      <span class="info-box-number">
+                        <h5>
+                          <b>{{vlrecebimento}}</b>
+                        </h5>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+
+    <div class="modal fade" id="modal-lg" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Abastecimento</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="abastecimento" method="post" action="{{URL}}/admin/abastecimentoAdd">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label>Descrava o abastecimento</label>
+                    <input name="descricao" type="text" placeholder="Exemplo: Abertura de caixa, Troco" class="form-control float-right">
+                  </div>
+
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Valor</label>
+                    <input name="valor" type="text" value="1.00" class="form-control float-right">
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+              </div>
+            </form>
+            <div class="card-body p-0 mt-3">
+              <table class="table table-sm">
+                <tbody>
+                {{trabastecimento}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button form="abastecimento" type="submit" class="btn btn-success">Inserir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-xl" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Sangria</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="sangria" method="post" action="{{URL}}/admin/sangriaAdd">
+              <div class="row">
+                <input name="mesa" value="{{mesa}}" type="hidden">
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label>Descrava a Sangria</label>
+                    <input name="descricao" type="text" placeholder="Exemplo: Pagamento Garrafão de agua, Pagamento Concerto Iphone" class="form-control float-right">
+                  </div>
+
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Valor</label>
+                    <input name="valor" type="number" value="1.00" class="form-control float-right">
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                                                <div class="col-md-12 mt-3">
+                  <div class="form-group">
+                        <div class="form-check">
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="tpSangria" id="tpSangria">
+                            <label class="custom-control-label" for="tpSangria">Sangria em Pix</label>
+                          </div>
+                        </div>
+                  </div>
+
+                  <!-- /.form-group -->
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" name="tpSangriaC" id="tpSangriaC">
+                        <label class="custom-control-label" for="tpSangriaC">Sangria em Cartão</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="card-body p-0 mt-3">
+              <table class="table table-sm">
+                <tbody>
+                {{trsangria}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button form="sangria" type="submit" class="btn btn-primary">Inserir</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-sm" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Promissorias</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card-body p-0 mt-3">
+              <table class="table table-sm">
+                <thead>
+                <tr>
+                  <th style="width: 10px">Codigo</th>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Data</th>
+                  <th>Valor</th>
+                  <th>Valor Pago</th>
+                  
+                  <th style="width: 80pt">Baixar Parcial</th>
+                  <th style="width: 40px">Baixar</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {{trrecebimento}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Resumo Caixa</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card-body p-0">
+              <table class="table table-sm">
+                <thead>
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Moeda</th>
+                  <th>Percentual</th>
+                  <th style="width: 40px">Valor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Dinheiro</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-success">{{vldinheiro}}</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Cartão de Credito</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-primary" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-primary">{{vlcredito}}</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cartão de Debito</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-primary" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-primary">{{vldebito}}</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Pix</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-success">{{vlpix}}</span></td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Promissoria</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar bg-warning" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-warning">{{vlpromissoria}}</span></td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Abastecimento</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-success">{{vlabastecimento}}</span></td>
+                </tr>
+                
+                <tr>
+                  <td>7.</td>
+                  <td>Recebimento</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-success">{{vlrecebimento}}</span></td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Total Recebimentos</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-success">{{vltotalrec}}</span></td>
+                </tr>
+                <tr>
+                <tr>
+                  <td>9.</td>
+                  <td>Sangria</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-danger">{{vlsangria}}</span></td>
+                </tr>
+                <tr>
+                  <td>#</td>
+                  <td>Total</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar bg-success" style="width: 0%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-gray">{{vltotal}}</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Retornar</button>
+            <a href="{{URL}}/admin/acertaconta">
+              <button type="button" class="btn btn-success float-right" style="margin-right: 5px;">
+                Encerrar Caixa
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2023 <a href="">Controle</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="{{URL}}/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="{{URL}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="{{URL}}/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="{{URL}}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="{{URL}}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="{{URL}}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="{{URL}}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="{{URL}}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="{{URL}}/plugins/jszip/jszip.min.js"></script>
+<script src="{{URL}}/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="{{URL}}/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="{{URL}}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="{{URL}}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="{{URL}}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="{{URL}}/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy",  "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<tr data-widget="expandable-table" aria-expanded="false">
+  <td>{{codmanutencao}}</td>
+  <td>{{tipo}} / {{tiposervico}}</td>
+  <td>{{defeito}}</td>
+  <td>{{cliente}}</td>
+  <td>{{vlliq}}</td>
+  <td>
+    <a href="{{URL}}/admin/removeManutencao/{{codmanutencao}}">
+      <p class="text-danger">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </p>
+    </a>
+  </td>
+</tr>
+<tr class="expandable-body d-none">
+  <td colspan="8">
+
+    <div class="card-body">
+
+      <dl class="row">
+
+        <dt class="col-sm-3">Descrição</dt>
+
+        <dd class="col-sm-8">{{defeito}}</dd>
+
+        <dt class="col-sm-3">Custo</dt>
+
+        <dd class="col-sm-8">{{vlliq}}</dd>
+
+        <dd class="col-sm-8 offset-sm-3"></dd>
+
+        <dt class="col-sm-3">Dispositivo entrada</dt>
+
+        <dd class="col-sm-8">{{debito}}</dd>
+
+        <dt class="col-sm-3">Dispositivo Retorno</dt>
+
+        <dd class="col-sm-8">{{debitoR}}</dd>
+
+        <dt class="col-sm-3">Materia Prima Utilizada</dt>
+
+        <dd class="col-sm-8">{{materiaPrima}}</dd>
+
+        <dd class="col-sm-8 offset-sm-3"></dd>
+
+        <dt class="col-sm-3">Moeda Diferencial</dt>
+
+        <dd class="col-sm-8">{{moeda}}</dd>
+
+        <dt class="col-sm-3">Valor Diferencial</dt>
+
+        <dd class="col-sm-8">{{diferencial}}</dd>
+
+      </dl>
+
+      </dl>
+
+    </div>
+
+  </td>
+</tr>

@@ -1,0 +1,19 @@
+<tr>
+    <td>{{numped}}</td>
+    <td>{{cliente}}</td>
+    <td>{{dtpedido}}</td>
+    <td>{{vlliq}}</td>
+    <td>{{tipo}}</td>
+    <td>{{status}}</td>
+
+    <td>
+        <a href="{{URL}}/admin/pedidos/{{numped}}"><i class="fas fa fa-eye"></i>
+        </a>
+        {{editar}}
+        {{extorno}}
+        <a href="#" class="m-2 text-danger" id="{{numped}}" data-toggle="modal" data-target="#modalDesistencia" data-id="{{numped}}" data-cliente="{{cliente}}">
+            <i class="fa fa-window-close"></i>
+          </a>
+
+    </td>
+</tr>

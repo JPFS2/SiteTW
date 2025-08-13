@@ -1,0 +1,19 @@
+<li> <!-- drag handle -->
+    <span class="handle">
+        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-ellipsis-v"></i>
+    </span>
+    <!-- checkbox -->
+    <div class="icheck-primary d-inline ml-2">
+        <input id="{{id}}" name="todo1" type="checkbox" value="" class="check-tarefas">
+        <label for="{{id}}"></label>
+        
+    </div> <!-- todo text -->
+    <span class="text">{{tarefa}}</span>
+    <!-- Emphasis label -->
+    <small class="badge badge-danger">
+        <i class="far fa-clock"></i> {{time}}</small>
+    <div class="tools">
+           <a href="{{URL}}/admin/removeTarefa/{{id}}"><i class="fas fa-trash"></i></a>
+    </div>
+</li>                                                                                               

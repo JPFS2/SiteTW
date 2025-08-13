@@ -1,0 +1,78 @@
+<div class="row">
+
+    <div class="col-md-7">
+
+        <input class="form-control" hidden="hidden"  name="codprod"  type="text">
+
+        <div class="form-group">
+            <input name="codcli" type="hidden" value="{{codcli}}">
+            <label for="inputEstimatedBudget">Descrição</label>
+            <input class="form-control"  name="descricao"  placeholder="Nome do Produto" type="text">
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group"><label for="inputEstimatedBudget">Armazenamento</label>
+            <input class="form-control" name="ean13" placeholder="" type="text">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group"><label for="inputEstimatedBudget">Cor</label>
+            <input class="form-control" name="und" placeholder="" type="text">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>IMEI</label>
+            <input class="form-control" name="peso" placeholder="" type="number">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Categoria</label>
+            <select class="form-control select2bs4 select2-hidden-accessible" name="codsecao" style="width: 100%;"
+                    data-select2-id="21" tabindex="-1" aria-hidden="true">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Quantidade</label>
+            <input  class="form-control" readonly name="qtestoque" value="1" type="number"></div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Preço Compra</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-dollar-sign"></i>
+                    </span>
+                </div>
+                <input class="form-control" name="pcompra"  placeholder="0,00" type="number">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Preço Venda</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </span>
+                </div>
+                <input class="form-control" name="punit" placeholder="0.00" type="number">
+            </div>
+        </div>
+    </div>
+</div>
